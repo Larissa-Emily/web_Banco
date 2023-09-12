@@ -1,0 +1,61 @@
+@media (max-width: 1024px) {
+  .mainInfos {
+    display: block;
+    top: 70%;
+  }
+  .mainInfos .image img {
+    margin-top: 50px;
+  }
+  .modalConta .child-modal,
+  .depositoConta .entradasInfo {
+    width: 80%;
+  }
+}
+
+@media (max-width: 780px) {
+  .modalConta input {
+    padding: 5px;
+  }
+  .modalConta .entradasInfo {
+    display: block;
+  }
+  .entradasInfo .data,
+  .entradasInfo .titulo,
+  .entradasInfo .valor,
+  .entradasInfo #adicionar {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 650px) {
+  .mainInfos {
+    top: 50%;
+  }
+  .mainInfos .client {
+    font-size: 1.5em;
+  }
+  .menuList ul,
+  .mainInfos .image img {
+    display: none;
+  }
+  .header .navMenu {
+    justify-content: left;
+  }
+  .mainInfos .client {
+    width: 300px;
+  }
+}
+
+@media (max-height: 590px) {
+  .modalArea,
+  .modalConta,
+  .depositoConta {
+    top: 90%;
+  }
+}
+
+@media (max-height: 390px) {
+  .mainInfos {
+    top: 150%;
+  }
+}

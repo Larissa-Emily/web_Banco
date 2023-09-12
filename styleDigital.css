@@ -1,0 +1,144 @@
+/*
+    menu-fundo: #42008c;
+    letras-destaque: #ddff21;
+    outras-letras: # fffffc
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+  text-decoration: none;
+  list-style: none;
+}
+
+.header .navMenu,
+.menuList,
+.menuList ul,
+.mainInfos {
+  display: flex;
+}
+
+.header .navMenu {
+  justify-content: space-around;
+  padding: 30px 50px;
+  background: #42008c;
+  color: #ddff21;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.header .navMenu h2,
+.menuList ul li {
+  cursor: pointer;
+}
+
+.menuList ul li {
+  margin: 5px 10px;
+}
+
+.menuList ul li:hover {
+  border-bottom: 1px solid #ddff21;
+}
+
+.mainInfos,
+.modalArea,
+.modalConta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mainInfos {
+  gap: 30px;
+}
+
+.mainInfos .client {
+  width: 400px;
+  padding: 50px;
+  box-shadow: 2px 5px 14px 5px #c5c5c5;
+}
+
+.mainInfos .client .continue,
+.modalArea .contaButton button {
+  padding: 12px 20px;
+  font-weight: 900;
+  background: #ddff21;
+  color: #42008c;
+  border: none;
+  cursor: pointer;
+}
+
+.mainInfos .client .continue:hover,
+.modalArea .contaButton button:hover{
+  background: #1c2003;
+  color: #fff;
+}
+
+.mainInfos .image img {
+  width: 500px;
+}
+
+.mainInfos .client input {
+  display: block;
+  width: 70%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+
+
+.modalArea, .modalConta, .depositoConta {
+  display: none;
+  position: absolute;
+  width: 95%;
+  min-height: 550px;
+  padding: 30px 20px;
+  background: #f3f3f3;
+  z-index: 999;
+  text-align: center;
+}
+
+.modalConta .child-modal, .depositoConta .entradasInfo{
+  width: 60%;
+  margin: 0 auto;
+}
+
+.modalArea header{
+  line-height: 50px;
+}
+
+.modalArea .contaButton button {
+  margin: 20px 10px;
+}
+ 
+.modalConta, .depositoConta{
+  background-color: #131313;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+
+.modalConta .headerFinanceiro, .entradasInfo{
+  display: flex;
+  background-color: #252020;
+  justify-content: space-around;
+  margin-top: 30px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.modalConta input, .entradasInfo input{
+  padding: 3px;
+}
+
+.modalConta  .relatorio{
+  min-height: 50px;
+}
+
+
+.modalConta  #saidaModal, #saidaModalDep{
+  padding: 10px;
+  margin-top: 10px;
+}

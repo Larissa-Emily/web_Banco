@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styleDigital.css" />
+    <link rel="stylesheet" href="mobile.css" />
+    <script src="scriptBanco.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navMenu">
+        <h2>Controle financeiro</h2>
+        <div class="menuList">
+          <ul>
+            <li>Home</li>
+            <li>Contas</li>
+            <li>Suporte</li>
+            <li>Contatos</li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="mainInfos">
+      <div class="client">
+        <label>Nome:</label>
+        <input type="text" id="name" />
+        <label>Conta:</label>
+        <input type="number" name="conta" id="conta" />
+        <label>Agencia:</label>
+        <input type="number" name="agencia" id="agencia" />
+        <button class="continue" id="advance">Avançar</button>
+      </div>
+      <div class="image">
+        <img src="./img/971.jpg" />
+      </div>
+    </section>
+    <section class="modalArea">
+      <header>
+        <h2>Bem vindo(a) <span id="nomeUsuario"></span></h2>
+        <h3>Escolha seus serviços</h3>
+      </header>
+
+      <div class="contaButton">
+        <button id="controleFinanceiro">Controle Financeiro</button>
+        <button id="depositoDinheiro">Deposito de Dinheiro</button>
+      </div>
+    </section>
+    <section class="modalConta">
+      <div class="child-modal">
+        <h2>Controle financeiro</h2>
+        <div class="headerFinanceiro">
+          <div class="mesConta"></div>
+          <div class="total">
+            <p>Total Conta</p>
+            <span id="total"></span>
+          </div>
+          <div class="despesas">
+            <p>Despesas</p>
+            <span id="despesas">0</span>
+          </div>
+          <div class="entradas">
+            <p>Entradas</p>
+            <span id="entrada">0</span>
+          </div>
+        </div>
+        <div class="entradasInfo">
+          <div class="data">
+            <p>Data</p>
+            <input type="date" id="date" />
+          </div>
+          <div class="titulo">
+            <p>Titulo</p>
+            <input type="text" id="titulo" />
+          </div>
+          <div class="valor">
+            <p>Valor</p>
+            <input type="number" id="valor" />
+          </div>
+          <button id="adicionar">Adicionar</button>
+        </div>
+        <div class="relatorio"></div>
+        <button id="saidaModal">Voltar</button>
+      </div>
+    </section>
+    <section class="depositoConta">
+      <div class="entradasInfo">
+        <div class="data">
+          <p>Data</p>
+          <input type="date" id="date" />
+        </div>
+        <div class="valor">
+          <p>Valor</p>
+          <input type="number" id="valorDep" />
+        </div>
+        <button id="depositar">Depositar</button>
+        <div class="relatorio"></div>
+      </div>
+      <button id="saidaModalDep">Voltar</button>
+    </section>
+  </body>
+</html>
